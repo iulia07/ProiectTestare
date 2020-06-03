@@ -77,7 +77,7 @@ namespace FinalProject
 
                     cartPage = homePage.loggedInMenuItemControl.NavigateToCart();
                     Assert.IsTrue(cartPage.IsProductAddedToCart(product.ProductName));
-                
+                    //verificare daca suma totala corespunde
                     Assert.AreEqual(TotalAmount, cartPage.GetTotalPrice);
 
                     homePage.loggedInMenuItemControl.NavigateToHomePage();
@@ -146,7 +146,7 @@ namespace FinalProject
             Assert.IsTrue(purchaseAlert.IsPurchaseAlertDisplayed());
 
         }
-        //i
+        
         //test pentru incercare de plasare a comenzii fara completare campuri
         [TestMethod]
         public void DidNotFillRequiredFieldOfOrderPage()
