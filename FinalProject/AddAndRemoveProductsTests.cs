@@ -146,7 +146,7 @@ namespace FinalProject
             Assert.IsTrue(purchaseAlert.IsPurchaseAlertDisplayed());
 
         }
-
+        //i
         //test pentru incercare de plasare a comenzii fara completare campuri
         [TestMethod]
         public void DidNotFillRequiredFieldOfOrderPage()
